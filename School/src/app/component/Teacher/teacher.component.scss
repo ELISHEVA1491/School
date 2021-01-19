@@ -1,0 +1,46 @@
+.try{
+    background-color: rgb(84, 130, 53);
+    // position: relative;
+    background-attachment: scroll;
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+    font-size: 81.25%;
+
+}
+.body1{
+    text-align: center;
+    // background-color: rgb(84, 130, 53);
+    // position: relative;
+
+
+}
+
+table {
+    width: 100%;
+    // margin: 30px;
+    text-align: center;
+    margin: 30px;
+    right:  30px;
+    margin-bottom: 48px;
+
+
+  }
+  
+  button {
+    margin: 16px 8px;
+    // box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);
+  
+
+  }
+ .mat-tab-group:hover{color:orange;}
+ .mat-tab-group {
+    margin-bottom: 48px;
+    // text-align: right;
+    right: 300px; 
+    // box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);
+
+  }
+  button.active{
+    background: yellow;
+  }
+
+  // DialogElementsExample

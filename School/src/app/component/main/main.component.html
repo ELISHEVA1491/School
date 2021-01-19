@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<div class="pageContainer">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Scool</title>
+<br></head>
+
+ <div class="body" dir="rtl">
+    <p>
+        <mat-toolbar>
+         <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+          <mat-icon><img src="src\img\logo.png" > </mat-icon>
+        </button>
+        <span>School</span>
+        <span class="example-spacer"></span>
+      </mat-toolbar>
+      </p>
+      <!-- <img src="BusinessOptimization.gif" > -->
+
+      <mat-card class="example-card">
+    <table style="width:100%">
+        <tr>
+          <th><Principal routerLink="principal">מנהלת</Principal></th>
+          <th><Consultant routerLink="consultant">יועצת</Consultant> </th>
+          <th> <Educator routerLink="educator">מחנכת</Educator></th>
+          <th> <Teacher routerLink="teacher">מורה</Teacher></th>
+        </tr>
+    </table>
+    <p>
+    <br> <br> <br> <br>
+
+    <mat-label>מערכת ניהול ציונים לבתי ספר</mat-label>
+    <br> <br> <br> <br>
+    <mat-label>נא הכנס/י שם משתמש וסיססמה</mat-label>
+</p>
+    <br><br><br><br><br>
+    <p>
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label class= "lable" >שם משתמש</mat-label>
+          <input matInput formControlName="id" >
+          <!-- <input type='text' [(ngModel)]='name'/> -->
+          <mat-hint></mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field class="full-width" appearance="fill">
+            <mat-label class= "lable">סיסמה</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+      </p>
+      <br><br> <br>
+    <button mat-raised-button (click)="Click()" > התחבר</button><br><br>
+    <button mat-raised-button (click)="Click()" > משתמש חדש? הרשם</button>
+</mat-card>
+
+    <br>
+    <!-- <img src="Welcome.png" > -->
+
+     <!-- <imgWelcome><img src="Welcome.png"  ></imgWelcome> -->
+</div>
+</div>
+
+
+
+    
+
+
